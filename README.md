@@ -6,7 +6,7 @@ prettyCron is a simple JavaScript deuglifier for cron schedules: it prints out a
 
 I wanted to use this library in my project using webpack 3 and react, however I couldn't.   After installing prettycron from npm, the project refused to build.
 
-Prettycron uses `later`, a package that has been abandonded and has a problem preventing it from compiling in webpack 2 or 3.   Here is the issue link: https://github.com/bunkat/later/issues/155 .  Some people have contributed workarounds in that thread, but I wasn't able to get them to work.  I suspect it's because in my project I was not using later directly, rather it was a dependency of a dependency.
+Prettycron uses `later`, a package that has been abandoned and has a problem preventing it from compiling in webpack 2 or 3.   Here is the issue link: https://github.com/bunkat/later/issues/155 .  Some people have contributed workarounds in that thread, but I wasn't able to get them to work.  I suspect it's because in my project I was not using later directly, rather it was a dependency of a dependency.
 
 One person created a forked version of later which fixes the webpack problem.   So, I forked prettyCron and changed its dependency to point at the forked version of later.
 
